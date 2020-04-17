@@ -67,6 +67,12 @@ export class HeroesService {
     return this.heroes[idx];
   }
 
+  buscarHeroes(termino){
+    this.heroes.forEach(heroe => {
+      if(heroe.nombre.toLowerCase == termino.toLowerCase) { console.log('Heroe encontrado:'+termino) }
+    });
+  }
+
 }
 
 
